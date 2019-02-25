@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.web_development_project.body
     - field.field.node.web_development_project.field_dates_of_development
     - field.field.node.web_development_project.field_featured_project
+    - field.field.node.web_development_project.field_project_colleague
     - field.field.node.web_development_project.field_project_snapshot
     - field.field.node.web_development_project.field_project_tools
     - field.field.node.web_development_project.field_project_website
@@ -49,6 +50,15 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_project_colleague:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_project_snapshot:
     weight: 122

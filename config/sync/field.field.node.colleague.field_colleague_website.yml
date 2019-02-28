@@ -1,0 +1,23 @@
+uuid: bf1d2b04-37ac-4e84-a27f-59e964e0e9c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colleague_website
+    - node.type.colleague
+  module:
+    - link
+id: node.colleague.field_colleague_website
+field_name: field_colleague_website
+entity_type: node
+bundle: colleague
+label: 'Colleague Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

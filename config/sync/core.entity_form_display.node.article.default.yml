@@ -1,22 +1,17 @@
-uuid: 4b3404c1-d94c-4c7a-97b5-35222537d7a4
+uuid: fae5b8e5-defc-47fa-8aa7-6fd604d08af4
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_featured_article
     - field.field.node.article.field_image
-    - field.field.node.article.field_related_web_development_pr
     - field.field.node.article.field_tags
-    - field.field.node.article.field_tools
-    - field.field.node.article.field_website
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
     - image
-    - link
     - path
     - text
 _core:
@@ -47,13 +42,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_featured_article:
-    weight: 122
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_image:
     type: image_image
     weight: 4
@@ -62,15 +50,6 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_related_web_development_pr:
-    weight: 121
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3
@@ -80,23 +59,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_tools:
-    weight: 124
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_website:
-    weight: 123
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   path:
     type: path
     weight: 30

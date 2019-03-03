@@ -1,4 +1,4 @@
-uuid: 49232d98-3cec-4e15-b626-7570acc3b7e4
+uuid: 14ab5d2d-7ee5-4e15-8756-0e79887a03c4
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ field_name: field_project_website
 entity_type: node
 bundle: web_development_project
 label: 'Project Website'
-description: 'The project URL'
+description: 'The link where your project, or a specific part of a project you contributed to, can be viewed.'
 required: false
 translatable: false
 default_value: {  }

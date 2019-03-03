@@ -1,13 +1,15 @@
-uuid: 3679dd1d-4e26-43f3-a70b-edda737538bb
+uuid: 21e8912c-4f0e-4cd6-93da-54ea4c92b6ef
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.colleague.body
+    - field.field.node.colleague.field_colleague_company
     - field.field.node.colleague.field_colleague_email
+    - field.field.node.colleague.field_colleague_job_title
     - field.field.node.colleague.field_colleague_phone
-    - field.field.node.colleague.field_colleague_snapshot
     - field.field.node.colleague.field_colleague_website
+    - field.field.node.colleague.field_headshot
     - image.style.thumbnail
     - node.type.colleague
   module:
@@ -36,6 +38,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_colleague_company:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_colleague_email:
     weight: 124
     settings:
@@ -44,20 +54,20 @@ content:
     third_party_settings: {  }
     type: email_default
     region: content
+  field_colleague_job_title:
+    weight: 127
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_colleague_phone:
     weight: 125
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
-    region: content
-  field_colleague_snapshot:
-    weight: 122
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   field_colleague_website:
     weight: 123
@@ -66,6 +76,14 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_headshot:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   path:
     type: path

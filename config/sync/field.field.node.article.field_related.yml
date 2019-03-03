@@ -1,0 +1,28 @@
+uuid: 17dbcecc-fa64-43b6-9f06-be8206b87a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related
+    - node.type.article
+    - node.type.web_development_project
+id: node.article.field_related
+field_name: field_related
+entity_type: node
+bundle: article
+label: 'Related Web Development Projects'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      web_development_project: web_development_project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

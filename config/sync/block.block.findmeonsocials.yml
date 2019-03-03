@@ -1,0 +1,31 @@
+uuid: 7ab4dc59-839f-42a9-81c2-b3c894bf3f26
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7198965c-6621-4023-883e-db9d530cd706'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: findmeonsocials
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:7198965c-6621-4023-883e-db9d530cd706'
+settings:
+  id: 'block_content:7198965c-6621-4023-883e-db9d530cd706'
+  label: 'Find me on Socials'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: 'Show only Contact form'
+    negate: false
+    context_mapping: {  }

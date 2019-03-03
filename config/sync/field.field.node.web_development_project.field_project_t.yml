@@ -1,0 +1,29 @@
+uuid: e0bc7030-f045-4838-9af0-5a806e272483
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_t
+    - node.type.web_development_project
+    - taxonomy.vocabulary.tools
+id: node.web_development_project.field_project_t
+field_name: field_project_t
+entity_type: node
+bundle: web_development_project
+label: 'Project  Tools'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tools: tools
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

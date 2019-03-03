@@ -1,0 +1,24 @@
+uuid: 1417636d-6c9a-4ffc-a3c9-283b4ae8d9e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles_view
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__articles_view_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:articles_view-block_1'
+settings:
+  id: 'views_block:articles_view-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

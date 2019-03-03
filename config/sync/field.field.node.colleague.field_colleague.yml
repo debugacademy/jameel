@@ -1,0 +1,38 @@
+uuid: 5a8fc6e1-45aa-403f-8ad9-0c86e13567a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colleague
+    - node.type.colleague
+  module:
+    - image
+id: node.colleague.field_colleague
+field_name: field_colleague
+entity_type: node
+bundle: colleague
+label: Colleague
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

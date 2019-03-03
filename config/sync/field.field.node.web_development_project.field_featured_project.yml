@@ -1,0 +1,23 @@
+uuid: 3bb2c89e-c445-40f6-864e-cb57ba3bf49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_project
+    - node.type.web_development_project
+id: node.web_development_project.field_featured_project
+field_name: field_featured_project
+entity_type: node
+bundle: web_development_project
+label: 'Featured Project'
+description: 'To featured a web development'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

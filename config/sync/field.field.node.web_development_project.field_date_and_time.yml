@@ -1,0 +1,21 @@
+uuid: 47663e1a-9fca-491b-aa8f-9eebd6e31715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_and_time
+    - node.type.web_development_project
+  module:
+    - datetime_range
+id: node.web_development_project.field_date_and_time
+field_name: field_date_and_time
+entity_type: node
+bundle: web_development_project
+label: 'Date of /development'
+description: 'Help Date'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

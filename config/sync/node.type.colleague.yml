@@ -1,0 +1,18 @@
+uuid: 8120a520-500d-4335-baf3-9628c152205a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Colleague
+type: colleague
+description: 'Colleagues -- former and current.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

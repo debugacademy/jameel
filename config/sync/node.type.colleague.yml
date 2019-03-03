@@ -1,0 +1,17 @@
+uuid: 09fab12d-dfcf-430e-96fc-93f93356436b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Colleague
+type: colleague
+description: 'Colleagues -- former and current'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

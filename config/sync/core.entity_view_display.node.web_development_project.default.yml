@@ -1,12 +1,12 @@
-uuid: 76e18620-6250-49bc-b277-767698eb5279
+uuid: 624f7747-b29f-4cee-8fa7-f648708d2e66
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.web_development_project.body
     - field.field.node.web_development_project.field_dates_of_development
-    - field.field.node.web_development_project.field_featured_project
-    - field.field.node.web_development_project.field_project_colleague
+    - field.field.node.web_development_project.field_featured
+    - field.field.node.web_development_project.field_project_colleagues
     - field.field.node.web_development_project.field_project_snapshot
     - field.field.node.web_development_project.field_project_tools
     - field.field.node.web_development_project.field_project_website
@@ -35,12 +35,12 @@ content:
     label: above
     settings:
       timezone_override: ''
-      format_type: html_date
+      format_type: html_month
       separator: '-'
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_project_colleague:
+  field_project_colleagues:
     weight: 6
     label: above
     settings:
@@ -83,4 +83,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_featured_project: true
+  field_featured: true

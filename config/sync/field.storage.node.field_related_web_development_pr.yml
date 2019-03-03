@@ -1,4 +1,4 @@
-uuid: 94fadbb6-69f8-4128-8222-78adbeb95dd3
+uuid: e0775e96-607f-4651-8476-d6436e7bc684
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ settings:
   target_type: node
 module: core
 locked: false
-cardinality: 3
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

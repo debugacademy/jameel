@@ -1,4 +1,4 @@
-uuid: 6c954449-8166-4193-a8ef-a1507e5399db
+uuid: 6f98389b-032c-4490-a5ef-5a01731fe150
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ field_name: field_colleague_phone
 entity_type: node
 bundle: colleague
 label: 'Colleague Phone'
-description: ''
+description: 'Colleague''s phone number'
 required: false
 translatable: false
 default_value: {  }

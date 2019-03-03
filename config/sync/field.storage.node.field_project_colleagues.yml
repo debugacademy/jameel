@@ -1,16 +1,15 @@
-uuid: 94e7db06-c560-422c-b7ac-c7fcc72bc3ca
+uuid: 65f97d7e-dd7a-45a1-a592-d7ada79f8a25
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_tools
-field_name: field_tools
+id: node.field_project_colleagues
+field_name: field_project_colleagues
 entity_type: node
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: node
 module: core
 locked: false
 cardinality: -1

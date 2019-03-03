@@ -1,4 +1,4 @@
-uuid: 9afa502c-dab5-4222-83ca-3e9c39b2fcee
+uuid: 6ba3a730-e663-46bf-bff5-effb17a252d0
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ field_name: field_colleague_email
 entity_type: node
 bundle: colleague
 label: 'Colleague Email'
-description: ''
-required: true
+description: 'The email address for this colleague.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

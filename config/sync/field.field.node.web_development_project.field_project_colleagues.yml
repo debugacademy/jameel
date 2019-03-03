@@ -1,0 +1,21 @@
+uuid: 3e3136c6-4271-4865-afb6-e42321ddb4b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_colleagues
+    - node.type.web_development_project
+id: node.web_development_project.field_project_colleagues
+field_name: field_project_colleagues
+entity_type: node
+bundle: web_development_project
+label: 'Project Colleagues'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

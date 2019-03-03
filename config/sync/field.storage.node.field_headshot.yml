@@ -1,4 +1,4 @@
-uuid: dc2ca467-2fba-4b73-8271-0c56419a105b
+uuid: 36e0d06a-20af-4bb9-bf3a-7fb098b6f2c8
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - node
-id: node.field_colleague_snapshot
-field_name: field_colleague_snapshot
+id: node.field_headshot
+field_name: field_headshot
 entity_type: node
 type: image
 settings:

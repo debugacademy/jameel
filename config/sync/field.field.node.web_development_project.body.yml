@@ -1,4 +1,4 @@
-uuid: 4b1a1bbc-083b-4d4d-b8a0-e2401a157b7e
+uuid: 3d5a366f-dc3e-42a2-a14d-40be1d86076d
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ field_name: body
 entity_type: node
 bundle: web_development_project
 label: 'Project Description'
-description: 'Description of project'
-required: true
+description: ''
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''

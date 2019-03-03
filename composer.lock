@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7172227968f0f00fca4ad4a6482b9162",
+    "content-hash": "98168754ec6b8e1b2b8b7909611fc363",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1912,6 +1912,7 @@
             "time": "2018-07-27T10:07:07+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "drupal/address",
             "version": "1.4.0",
             "source": {
@@ -1975,6 +1976,8 @@
             }
         },
         {
+=======
+>>>>>>> 49a0c800477f51307c594d9579c9c37aa758a7c3
             "name": "drupal/admin_toolbar",
             "version": "1.26.0",
             "source": {

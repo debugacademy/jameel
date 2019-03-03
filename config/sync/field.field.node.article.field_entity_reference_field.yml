@@ -1,0 +1,29 @@
+uuid: a78ffe9c-787b-45cb-acd3-aad0d6402e7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entity_reference_field
+    - node.type.article
+    - taxonomy.vocabulary.tools
+id: node.article.field_entity_reference_field
+field_name: field_entity_reference_field
+entity_type: node
+bundle: article
+label: Tools
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tools: tools
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

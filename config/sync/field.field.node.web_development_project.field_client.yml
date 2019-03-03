@@ -1,0 +1,19 @@
+uuid: af1912a1-be6a-4028-8a60-6b6be78b239d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client
+    - node.type.web_development_project
+id: node.web_development_project.field_client
+field_name: field_client
+entity_type: node
+bundle: web_development_project
+label: 'Client Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 128ef6b1-d05b-4742-90d6-c380b87031d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates_worked_together
+    - node.type.colleague
+  module:
+    - datetime_range
+id: node.colleague.field_dates_worked_together
+field_name: field_dates_worked_together
+entity_type: node
+bundle: colleague
+label: 'Dates worked together'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

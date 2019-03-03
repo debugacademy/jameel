@@ -1,0 +1,21 @@
+uuid: 7d91753d-7812-4550-8d48-cca29c380e7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates_of_development
+    - node.type.web_development_project
+  module:
+    - datetime_range
+id: node.web_development_project.field_dates_of_development
+field_name: field_dates_of_development
+entity_type: node
+bundle: web_development_project
+label: 'Dates of Development'
+description: 'Time span that I worked on the project'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

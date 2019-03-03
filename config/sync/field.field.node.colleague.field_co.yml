@@ -1,0 +1,23 @@
+uuid: 8018f800-0022-45cf-9f3f-967cc762f4ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co
+    - node.type.colleague
+  module:
+    - link
+id: node.colleague.field_co
+field_name: field_co
+entity_type: node
+bundle: colleague
+label: 'Colleague Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

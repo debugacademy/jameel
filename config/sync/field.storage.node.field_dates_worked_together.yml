@@ -1,0 +1,20 @@
+uuid: 0f43a06a-b4f1-489f-b3cc-11702effc912
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+id: node.field_dates_worked_together
+field_name: field_dates_worked_together
+entity_type: node
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

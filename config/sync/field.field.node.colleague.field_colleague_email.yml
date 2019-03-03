@@ -1,0 +1,19 @@
+uuid: fc8bbd25-4447-4dba-bed4-861910a679d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colleague_email
+    - node.type.colleague
+id: node.colleague.field_colleague_email
+field_name: field_colleague_email
+entity_type: node
+bundle: colleague
+label: 'Colleague Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

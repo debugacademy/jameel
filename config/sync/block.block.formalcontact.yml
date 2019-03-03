@@ -1,0 +1,31 @@
+uuid: 9673ee6f-a533-423f-bb63-4f6c09434313
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:88535181-8250-4c4d-a4ca-09af898f9d97'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: formalcontact
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:88535181-8250-4c4d-a4ca-09af898f9d97'
+settings:
+  id: 'block_content:88535181-8250-4c4d-a4ca-09af898f9d97'
+  label: 'Formal Contact'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/feedback
+    negate: false
+    context_mapping: {  }

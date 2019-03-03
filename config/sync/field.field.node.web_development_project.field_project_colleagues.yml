@@ -1,0 +1,28 @@
+uuid: dc759879-35ad-4391-9847-e443b93a9457
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_colleagues
+    - node.type.colleague
+    - node.type.web_development_project
+id: node.web_development_project.field_project_colleagues
+field_name: field_project_colleagues
+entity_type: node
+bundle: web_development_project
+label: 'Project Colleagues'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      colleague: colleague
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

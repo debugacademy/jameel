@@ -1,0 +1,17 @@
+uuid: f01a93a3-a647-432c-b1d2-f3f2702cb471
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Web Development Project'
+type: web_development_project
+description: 'To show off and display all the web dev projects that I have created or participated in.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

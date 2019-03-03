@@ -1,0 +1,8 @@
+uuid: 6c7746e1-b5ba-450b-bee5-4b985e3d5f39
+langcode: en
+status: true
+dependencies: {  }
+id: list_block
+label: 'List Block'
+revision: 0
+description: 'Creates a block with icon, title, and list of items.'

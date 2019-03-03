@@ -1,4 +1,4 @@
-uuid: 7d5c99f5-7b81-471a-a763-8afcbd99774f
+uuid: 9aad1b2d-8991-4ad0-a9f7-3fa564c59073
 langcode: en
 status: true
 dependencies:
@@ -55,7 +55,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 12
+          items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
@@ -352,18 +352,6 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        field_featured_article_value:
-          id: field_featured_article_value
-          table: node__field_featured_article
-          field: field_featured_article_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
         created:
           id: created
           table: node_field_data
@@ -379,7 +367,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Blog Feed'
+      title: Articles
       header: {  }
       footer: {  }
       empty: {  }
@@ -400,7 +388,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Article''s Teaser Block'
+    display_title: 'Articles Teaser Block'
     position: 2
     display_options:
       display_extenders: {  }
@@ -409,7 +397,6 @@ display:
       defaults:
         title: false
         fields: false
-        sorts: false
         pager: false
         use_more: false
         use_more_always: false
@@ -526,22 +513,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
       pager:
         type: some
         options:
@@ -567,6 +538,28 @@ display:
     display_options:
       display_extenders: {  }
       path: articles-view
+      title: 'Blog feed'
+      defaults:
+        title: false
+        pager: false
+      pager:
+        type: mini
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
     cache_metadata:
       max-age: -1
       contexts:

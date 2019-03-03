@@ -1,0 +1,31 @@
+uuid: 91a2c9f9-9462-418e-9d94-871fee330d59
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:986568c9-7c34-4796-8972-8b88d2b2563d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: findmeonsocial_2
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:986568c9-7c34-4796-8972-8b88d2b2563d'
+settings:
+  id: 'block_content:986568c9-7c34-4796-8972-8b88d2b2563d'
+  label: 'Find me on Social'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /content/feedback
+    negate: false
+    context_mapping: {  }

@@ -1,4 +1,4 @@
-uuid: b3cff3cc-18ea-4510-bdb5-4781e6db6743
+uuid: 37b9a786-09bd-42c3-8307-e1880a2049a8
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ field_name: field_project_snapshot
 entity_type: node
 bundle: web_development_project
 label: 'Project Snapshot'
-description: 'A snapshot of our project'
-required: true
+description: 'Screenshot of web project.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

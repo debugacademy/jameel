@@ -1,0 +1,21 @@
+uuid: 3417fce3-d26b-4ec9-9b2d-a764ec67dbd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_since
+    - node.type.colleague
+  module:
+    - datetime
+id: node.colleague.field_contact_since
+field_name: field_contact_since
+entity_type: node
+bundle: colleague
+label: 'Contact Since'
+description: 'Enter the date that you started working with this colleague.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

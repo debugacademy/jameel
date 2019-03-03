@@ -1,0 +1,30 @@
+uuid: 63b0c95e-9347-4f3c-8fde-95f0e5592ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.web_development_project
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__web_development_project_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:web_development_project-block_1'
+settings:
+  id: 'views_block:web_development_project-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: 93147b67-572f-4529-a67b-b29bd2edef56
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Web Development Project'
+type: web_development_project
+description: 'Web Development Projects that I have contributed to or created.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

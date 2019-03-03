@@ -1,0 +1,21 @@
+uuid: 48e53028-762e-4dd2-9a13-524d5369893b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colleague_phone
+    - node.type.colleague
+  module:
+    - telephone
+id: node.colleague.field_colleague_phone
+field_name: field_colleague_phone
+entity_type: node
+bundle: colleague
+label: 'Colleague Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

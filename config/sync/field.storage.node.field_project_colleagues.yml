@@ -1,0 +1,19 @@
+uuid: cab1ffb6-fb8b-45de-b035-f8e30f15df54
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_project_colleagues
+field_name: field_project_colleagues
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

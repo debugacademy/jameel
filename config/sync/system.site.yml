@@ -1,0 +1,14 @@
+uuid: 112dba9d-c538-4c1b-be11-42111dd60921
+name: 'DC-Erok Classroom Project'
+mail: eric@erubino.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

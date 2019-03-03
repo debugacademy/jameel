@@ -1,0 +1,8 @@
+uuid: dde4f751-ff29-4637-ac66-dc5a7d28cda4
+langcode: en
+status: true
+dependencies: {  }
+id: callout_image
+label: 'Callout Image'
+revision: 0
+description: ''

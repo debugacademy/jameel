@@ -1,0 +1,22 @@
+uuid: 05c8a4dd-1c88-4e22-9329-f080c3c64ca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.web_development_project
+  module:
+    - text
+id: node.web_development_project.body
+field_name: body
+entity_type: node
+bundle: web_development_project
+label: 'Project Description'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

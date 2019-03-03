@@ -1,0 +1,69 @@
+uuid: 4ce0d61e-8754-4e5f-97dc-dcfaa049b395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.colleague.body
+    - field.field.node.colleague.field_colleague_email
+    - field.field.node.colleague.field_colleague_phone
+    - field.field.node.colleague.field_colleague_website
+    - field.field.node.colleague.field_headshot
+    - node.type.colleague
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.colleague.default
+targetEntityType: node
+bundle: colleague
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_colleague_email:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_colleague_phone:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_colleague_website:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_headshot:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,16 +1,16 @@
-uuid: 7651a206-2cce-47ca-b6be-18b67718d674
+uuid: b44b6231-c03c-4f9e-acde-8bd13df543e9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_project_colleague
+    - field.storage.node.field_project_colleagues
     - node.type.colleague
     - node.type.web_development_project
-id: node.web_development_project.field_project_colleague
-field_name: field_project_colleague
+id: node.web_development_project.field_project_colleagues
+field_name: field_project_colleagues
 entity_type: node
 bundle: web_development_project
-label: 'Project Colleague'
+label: 'Project Colleagues'
 description: ''
 required: false
 translatable: false

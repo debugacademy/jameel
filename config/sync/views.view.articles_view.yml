@@ -1,4 +1,4 @@
-uuid: 7d5c99f5-7b81-471a-a763-8afcbd99774f
+uuid: d2388ba6-ed95-42f0-af34-0f67f48b37b3
 langcode: en
 status: true
 dependencies:
@@ -153,6 +153,53 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          entity_type: node
+          entity_field: title
+          label: ''
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
+          settings:
+            link_to_entity: true
+          plugin_id: field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exclude: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         created:
           id: created
           table: node_field_data
@@ -220,53 +267,6 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         body:
           id: body
           table: node__body
@@ -351,11 +351,12 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          group: 1
       sorts:
-        field_featured_article_value:
-          id: field_featured_article_value
-          table: node__field_featured_article
-          field: field_featured_article_value
+        field_featured_value:
+          id: field_featured_value
+          table: node__field_featured
+          field: field_featured_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -379,13 +380,20 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Blog Feed'
+      title: 'Recent Article'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_more: true
+      use_more_always: true
+      use_more_text: more
     cache_metadata:
       max-age: -1
       contexts:
@@ -400,20 +408,17 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Article''s Teaser Block'
+    display_title: 'Articles Teaser Block'
     position: 2
     display_options:
       display_extenders: {  }
       display_description: ''
-      title: 'Recent Articles'
+      title: 'Recent Article'
       defaults:
         title: false
         fields: false
         sorts: false
         pager: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
       fields:
         field_image:
           id: field_image
@@ -547,9 +552,6 @@ display:
         options:
           items_per_page: 3
           offset: 0
-      use_more: true
-      use_more_always: true
-      use_more_text: more
     cache_metadata:
       max-age: -1
       contexts:
@@ -562,11 +564,12 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: 'Blog Feed'
     position: 1
     display_options:
       display_extenders: {  }
       path: articles-view
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

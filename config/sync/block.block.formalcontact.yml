@@ -1,9 +1,9 @@
-uuid: 3a5dbdb3-ae17-479c-b7e8-187ad03301c1
+uuid: 2cd54791-4d48-40aa-bafb-95b2f6bb84cd
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:5f80bd2f-e960-48c3-8c46-095aae9139a7'
+    - 'block_content:basic:91ea657b-506f-4b4a-8f01-ae6744ab757e'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: bartik
 region: sidebar_first
 weight: 0
 provider: null
-plugin: 'block_content:5f80bd2f-e960-48c3-8c46-095aae9139a7'
+plugin: 'block_content:91ea657b-506f-4b4a-8f01-ae6744ab757e'
 settings:
-  id: 'block_content:5f80bd2f-e960-48c3-8c46-095aae9139a7'
+  id: 'block_content:91ea657b-506f-4b4a-8f01-ae6744ab757e'
   label: 'Formal Contact'
   provider: block_content
   label_display: visible

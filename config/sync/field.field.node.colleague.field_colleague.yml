@@ -1,19 +1,19 @@
-uuid: b3cff3cc-18ea-4510-bdb5-4781e6db6743
+uuid: 0299c938-dd3a-4fa4-bfc4-7dec5794b250
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_project_snapshot
-    - node.type.web_development_project
+    - field.storage.node.field_colleague
+    - node.type.colleague
   module:
     - image
-id: node.web_development_project.field_project_snapshot
-field_name: field_project_snapshot
+id: node.colleague.field_colleague
+field_name: field_colleague
 entity_type: node
-bundle: web_development_project
-label: 'Project Snapshot'
-description: 'A snapshot of our project'
-required: true
+bundle: colleague
+label: Colleague
+description: ''
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

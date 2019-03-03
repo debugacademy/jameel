@@ -1,16 +1,16 @@
-uuid: 6bebd0a0-fce9-4202-b083-6000d2b0ad0c
+uuid: 22520657-6c95-4e0a-9e47-4fecd5939ee2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_featured_project
+    - field.storage.node.field_featured
     - node.type.web_development_project
-id: node.web_development_project.field_featured_project
-field_name: field_featured_project
+id: node.web_development_project.field_featured
+field_name: field_featured
 entity_type: node
 bundle: web_development_project
-label: 'Featured Project'
-description: 'To feature a web development project that will be shown on the front page.'
+label: featured
+description: ''
 required: false
 translatable: false
 default_value:

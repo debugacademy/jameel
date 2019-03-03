@@ -1,18 +1,17 @@
-uuid: a34b1855-8b1e-476d-ae66-55f836a70847
+uuid: 0ccfce2b-80cc-40e0-beb6-c2d1a4260e63
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - telephone
-id: node.field_colleague_phone
-field_name: field_colleague_phone
+id: node.field_featured_web
+field_name: field_featured_web
 entity_type: node
-type: telephone
+type: boolean
 settings: {  }
-module: telephone
+module: core
 locked: false
-cardinality: 2
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,16 +1,16 @@
-uuid: 7b5fb334-2fe2-4f82-a760-2fae7a65cafd
+uuid: 29887646-ad0a-4e91-af2d-686c7f83f8c5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tools
+    - field.storage.node.field_web_development_projects
     - node.type.article
     - taxonomy.vocabulary.tools
-id: node.article.field_tools
-field_name: field_tools
+id: node.article.field_web_development_projects
+field_name: field_web_development_projects
 entity_type: node
 bundle: article
-label: tools
+label: 'Web Development Projects'
 description: ''
 required: false
 translatable: false

@@ -1,0 +1,25 @@
+uuid: 40c9ea60-96d6-45e0-ace7-36314644821d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:list_block:05347dce-2f29-4ec8-b8a9-13d87ffb89d0'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: skills
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:05347dce-2f29-4ec8-b8a9-13d87ffb89d0'
+settings:
+  id: 'block_content:05347dce-2f29-4ec8-b8a9-13d87ffb89d0'
+  label: Skills
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

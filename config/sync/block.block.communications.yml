@@ -1,0 +1,25 @@
+uuid: 9b9f1777-8155-41d4-8c94-406c47af1731
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:list_block:27750b09-004d-438b-b3be-2deaf28ab420'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: communications
+theme: bartik
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:27750b09-004d-438b-b3be-2deaf28ab420'
+settings:
+  id: 'block_content:27750b09-004d-438b-b3be-2deaf28ab420'
+  label: Communications
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

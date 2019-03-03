@@ -1,0 +1,25 @@
+uuid: 8956870d-75f7-4c56-beea-5f5f53a27154
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:list_block:d7149856-b43a-4b50-8058-4555ce418b67'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: devtools
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:d7149856-b43a-4b50-8058-4555ce418b67'
+settings:
+  id: 'block_content:d7149856-b43a-4b50-8058-4555ce418b67'
+  label: 'Dev Tools'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

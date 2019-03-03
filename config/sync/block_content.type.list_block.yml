@@ -1,0 +1,8 @@
+uuid: 85f202a2-60c0-4d0a-a44e-8edf0a27b1dd
+langcode: en
+status: true
+dependencies: {  }
+id: list_block
+label: 'List Block'
+revision: 0
+description: ''

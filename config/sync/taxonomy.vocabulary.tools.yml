@@ -1,0 +1,9 @@
+uuid: 112dba9d-c538-4c1b-be11-42111dd60921
+langcode: en
+status: true
+dependencies: {  }
+name: Tools
+vid: tools
+description: 'Skills and technologies used in creating my website.'
+hierarchy: 0
+weight: 0

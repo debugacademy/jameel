@@ -1,0 +1,8 @@
+uuid: f59fc33b-7cd5-4b0d-9e55-8154f2178725
+langcode: en
+status: true
+dependencies: {  }
+id: list_block
+label: 'List Block'
+revision: 0
+description: 'Creates a block with an icon, title and list of tools.'

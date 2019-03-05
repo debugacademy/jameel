@@ -1,9 +1,9 @@
-uuid: e729a0d1-dcb6-4d55-8c94-dc58f695ca4a
+uuid: 754c7c3c-0fff-47d9-9a1a-97f5c181b3a9
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:9d640cfe-e471-412a-a31a-77273a01086e'
+    - 'block_content:basic:0869cae5-342e-4187-84a8-3a6fafdee6e1'
   module:
     - block_content
     - system
@@ -14,10 +14,10 @@ theme: bartik
 region: sidebar_first
 weight: 0
 provider: null
-plugin: 'block_content:9d640cfe-e471-412a-a31a-77273a01086e'
+plugin: 'block_content:0869cae5-342e-4187-84a8-3a6fafdee6e1'
 settings:
-  id: 'block_content:9d640cfe-e471-412a-a31a-77273a01086e'
-  label: 'Find Me On Social'
+  id: 'block_content:0869cae5-342e-4187-84a8-3a6fafdee6e1'
+  label: 'Find Me on Social'
   provider: block_content
   label_display: visible
   status: true

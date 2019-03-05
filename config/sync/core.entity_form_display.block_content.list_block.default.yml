@@ -1,0 +1,39 @@
+uuid: 66635c32-7297-454f-bb2b-7f730fc4b8f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list_block
+    - field.field.block_content.list_block.field_icon
+    - field.field.block_content.list_block.field_tools
+  module:
+    - fontawesome
+id: block_content.list_block.default
+targetEntityType: block_content
+bundle: list_block
+mode: default
+content:
+  field_icon:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_tools:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

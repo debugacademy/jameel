@@ -1,0 +1,21 @@
+uuid: 895d8a08-063e-47cc-87ce-1bab9246f30b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list_block_
+    - field.storage.block_content.field_icon
+  module:
+    - fontawesome
+id: block_content.list_block_.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: list_block_
+label: Icon
+description: 'Display an image at the top of the list block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

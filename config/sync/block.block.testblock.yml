@@ -1,0 +1,25 @@
+uuid: 5b34ffa4-08aa-471e-a357-12ecdbc874d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:list_block_:404054f3-a97d-4865-aa08-ecc3a895467d'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: testblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:404054f3-a97d-4865-aa08-ecc3a895467d'
+settings:
+  id: 'block_content:404054f3-a97d-4865-aa08-ecc3a895467d'
+  label: 'Drupal List Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

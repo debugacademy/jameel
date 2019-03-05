@@ -1,0 +1,29 @@
+uuid: 2a299d98-5da7-42d1-bca5-4258ece53dc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list_block_
+    - field.storage.block_content.field_tools
+    - taxonomy.vocabulary.tools
+id: block_content.list_block_.field_tools
+field_name: field_tools
+entity_type: block_content
+bundle: list_block_
+label: Tools
+description: 'Displays a list of tools on the block.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tools: tools
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

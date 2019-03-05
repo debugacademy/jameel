@@ -1,17 +1,15 @@
-uuid: 1e9649a6-856c-42d6-823b-1262e2c3ab8c
+uuid: 7ca8aa37-dec4-4033-89c1-207d1be19383
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.colleague.body
+    - field.field.node.colleague.field_colleague
     - field.field.node.colleague.field_colleague_email
     - field.field.node.colleague.field_colleague_phone
-    - field.field.node.colleague.field_colleague_snapshot
-    - field.field.node.colleague.field_colleague_website
     - node.type.colleague
   module:
     - image
-    - link
     - text
     - user
 id: node.colleague.default
@@ -26,21 +24,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_colleague_email:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_colleague_phone:
-    weight: 105
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_colleague_snapshot:
+  field_colleague:
     weight: 102
     label: above
     settings:
@@ -49,17 +33,19 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_colleague_website:
+  field_colleague_email:
     weight: 103
     label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+    settings: {  }
     third_party_settings: {  }
-    type: link
+    type: basic_string
+    region: content
+  field_colleague_phone:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   links:
     weight: 100

@@ -1,4 +1,4 @@
-uuid: 9afa502c-dab5-4222-83ca-3e9c39b2fcee
+uuid: 2c4f9bf1-b6d2-42b3-a740-9d01b4b1911a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ entity_type: node
 bundle: colleague
 label: 'Colleague Email'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

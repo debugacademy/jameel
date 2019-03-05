@@ -1,18 +1,16 @@
-uuid: 3679dd1d-4e26-43f3-a70b-edda737538bb
+uuid: 73235c72-00be-44d2-86f5-8ab1f0bc8d69
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.colleague.body
+    - field.field.node.colleague.field_colleague
     - field.field.node.colleague.field_colleague_email
     - field.field.node.colleague.field_colleague_phone
-    - field.field.node.colleague.field_colleague_snapshot
-    - field.field.node.colleague.field_colleague_website
     - image.style.thumbnail
     - node.type.colleague
   module:
     - image
-    - link
     - path
     - telephone
     - text
@@ -36,22 +34,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_colleague_email:
-    weight: 124
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: email_default
-    region: content
-  field_colleague_phone:
-    weight: 125
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
-    region: content
-  field_colleague_snapshot:
+  field_colleague:
     weight: 122
     settings:
       progress_indicator: throbber
@@ -59,13 +42,20 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_colleague_website:
+  field_colleague_email:
     weight: 123
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: link_default
+    type: email_default
+    region: content
+  field_colleague_phone:
+    weight: 124
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
     region: content
   path:
     type: path

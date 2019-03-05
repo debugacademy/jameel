@@ -1,0 +1,25 @@
+uuid: c40772ac-5314-4a4f-ae56-63c4e6651cc3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:callout_image:1ee8eb9c-eb82-4c96-bb57-65acf25239a4'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: firstcalloutimage
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1ee8eb9c-eb82-4c96-bb57-65acf25239a4'
+settings:
+  id: 'block_content:1ee8eb9c-eb82-4c96-bb57-65acf25239a4'
+  label: 'First Callout Image'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

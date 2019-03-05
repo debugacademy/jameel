@@ -1,0 +1,8 @@
+uuid: bd124962-fd4b-438a-bbd5-e2f549b972a3
+langcode: en
+status: true
+dependencies: {  }
+id: callout_text
+label: 'Callout Text'
+revision: 0
+description: ''

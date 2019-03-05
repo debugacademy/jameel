@@ -1,16 +1,16 @@
-uuid: dc5e5fe0-a189-4490-91fa-50aea0d84808
+uuid: 20d6da7b-c1a8-4095-821b-06053977538f
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.callout_image
+    - block_content.type.callout_text
     - field.storage.block_content.body
   module:
     - text
-id: block_content.callout_image.body
+id: block_content.callout_text.body
 field_name: body
 entity_type: block_content
-bundle: callout_image
+bundle: callout_text
 label: Body
 description: ''
 required: false

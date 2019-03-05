@@ -1,0 +1,25 @@
+uuid: 0d325fd9-43dd-40cf-a682-1c7b821e6f0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_articles
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__related_articles_block_1
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: 'views_block:related_articles-block_1'
+settings:
+  id: 'views_block:related_articles-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

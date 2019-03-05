@@ -1,0 +1,22 @@
+uuid: 85dc1602-b06d-4974-b044-9dd7e810ea5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout_text
+    - field.field.block_content.callout_text.body
+  module:
+    - text
+id: block_content.callout_text.default
+targetEntityType: block_content
+bundle: callout_text
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

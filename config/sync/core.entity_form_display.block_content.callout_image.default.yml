@@ -4,26 +4,15 @@ status: true
 dependencies:
   config:
     - block_content.type.callout_image
-    - field.field.block_content.callout_image.body
     - field.field.block_content.callout_image.field_image
     - image.style.thumbnail
   module:
     - image
-    - text
 id: block_content.callout_image.default
 targetEntityType: block_content
 bundle: callout_image
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 26
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   field_image:
     weight: 27
     settings:

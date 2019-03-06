@@ -1,13 +1,14 @@
-uuid: 1e9649a6-856c-42d6-823b-1262e2c3ab8c
+uuid: 438f2920-bf80-4323-ac01-64584b3ab5b3
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.colleague.body
+    - field.field.node.colleague.field_colleague
+    - field.field.node.colleague.field_colleague_address
     - field.field.node.colleague.field_colleague_email
-    - field.field.node.colleague.field_colleague_phone
-    - field.field.node.colleague.field_colleague_snapshot
     - field.field.node.colleague.field_colleague_website
+    - field.field.node.colleague.field_colleagues_phone
     - node.type.colleague
   module:
     - image
@@ -26,21 +27,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_colleague_email:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_colleague_phone:
-    weight: 105
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_colleague_snapshot:
+  field_colleague:
     weight: 102
     label: above
     settings:
@@ -48,6 +35,21 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_colleague_address:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_colleague_email:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_colleague_website:
     weight: 103
@@ -60,6 +62,13 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_colleagues_phone:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   links:
     weight: 100

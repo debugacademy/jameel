@@ -1,14 +1,16 @@
-uuid: 7e2c5233-a1d5-44c3-b3b4-ec76f4c955cd
+uuid: 5c00aa2a-d59f-4861-a6fc-2a81f26c3905
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_featured_project
-field_name: field_featured_project
+    - taxonomy
+id: node.field_web_development_projects
+field_name: field_web_development_projects
 entity_type: node
-type: boolean
-settings: {  }
+type: entity_reference
+settings:
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

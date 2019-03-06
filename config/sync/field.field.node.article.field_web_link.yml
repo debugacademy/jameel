@@ -1,17 +1,17 @@
-uuid: d47cbdba-40d0-42eb-a04f-6120b7683892
+uuid: 2b5eba0f-79e4-49ac-83e8-47cfe9217c63
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_website
+    - field.storage.node.field_web_link
     - node.type.article
   module:
     - link
-id: node.article.field_website
-field_name: field_website
+id: node.article.field_web_link
+field_name: field_web_link
 entity_type: node
 bundle: article
-label: website
+label: 'Web link'
 description: ''
 required: false
 translatable: false

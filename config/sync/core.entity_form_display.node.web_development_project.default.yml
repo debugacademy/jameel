@@ -1,13 +1,14 @@
-uuid: af3378f9-0095-4c76-8b97-ce75b6bc5c83
+uuid: 4737591c-5ada-4501-ae42-1b24518c049e
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.web_development_project.body
+    - field.field.node.web_development_project.field_address
     - field.field.node.web_development_project.field_dates_of_development
-    - field.field.node.web_development_project.field_featured_project
-    - field.field.node.web_development_project.field_project_colleague
-    - field.field.node.web_development_project.field_project_snapshot
+    - field.field.node.web_development_project.field_featured
+    - field.field.node.web_development_project.field_project_colleagues
+    - field.field.node.web_development_project.field_project_snapshots
     - field.field.node.web_development_project.field_project_tools
     - field.field.node.web_development_project.field_project_website
     - image.style.thumbnail
@@ -38,21 +39,29 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_address:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_dates_of_development:
     weight: 124
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_featured_project:
+  field_featured:
     weight: 125
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_project_colleague:
-    weight: 127
+  field_project_colleagues:
+    weight: 129
     settings:
       match_operator: CONTAINS
       size: 60
@@ -60,7 +69,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_project_snapshot:
+  field_project_snapshots:
     weight: 122
     settings:
       progress_indicator: throbber

@@ -1,0 +1,29 @@
+uuid: 29887646-ad0a-4e91-af2d-686c7f83f8c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_development_projects
+    - node.type.article
+    - taxonomy.vocabulary.tools
+id: node.article.field_web_development_projects
+field_name: field_web_development_projects
+entity_type: node
+bundle: article
+label: 'Web Development Projects'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tools: tools
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

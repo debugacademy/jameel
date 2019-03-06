@@ -1,4 +1,4 @@
-uuid: 197856fb-87ef-420c-9f42-1f75ad3d9f45
+uuid: 052dd879-dc6d-4cb4-8778-169986fb9da3
 langcode: en
 status: true
 dependencies:
@@ -26,5 +26,5 @@ visibility:
   request_path:
     id: request_path
     pages: /articles-view
-    negate: true
+    negate: false
     context_mapping: {  }

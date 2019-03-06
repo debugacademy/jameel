@@ -1,4 +1,4 @@
-uuid: 77effa62-07a2-4a06-845f-51d5fd76c741
+uuid: ddf98825-54af-492e-a658-9112dcd4ac04
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ field_name: field_dates_of_development
 entity_type: node
 bundle: web_development_project
 label: 'Dates of Development'
-description: 'Timespan that I worked on the project'
-required: true
+description: ''
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

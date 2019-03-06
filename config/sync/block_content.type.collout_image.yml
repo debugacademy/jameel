@@ -1,0 +1,8 @@
+uuid: 32d3c601-03e2-47f5-990d-acde10575840
+langcode: en
+status: true
+dependencies: {  }
+id: collout_image
+label: 'Callout Image'
+revision: 0
+description: ''

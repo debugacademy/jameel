@@ -1,4 +1,4 @@
-uuid: dc2ca467-2fba-4b73-8271-0c56419a105b
+uuid: 79c7727c-769f-4a29-8383-2707e8c68878
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - node
-id: node.field_colleague_snapshot
-field_name: field_colleague_snapshot
+id: node.field_project_snapshots
+field_name: field_project_snapshots
 entity_type: node
 type: image
 settings:
@@ -23,7 +23,7 @@ settings:
   display_default: false
 module: image
 locked: false
-cardinality: 1
+cardinality: 3
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

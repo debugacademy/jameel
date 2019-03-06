@@ -1,16 +1,16 @@
-uuid: 76e18620-6250-49bc-b277-767698eb5279
+uuid: 6b0524fd-5653-45cc-9e90-50a4081e776d
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.web_development_project.body
+    - field.field.node.web_development_project.field_address
     - field.field.node.web_development_project.field_dates_of_development
-    - field.field.node.web_development_project.field_featured_project
-    - field.field.node.web_development_project.field_project_colleague
-    - field.field.node.web_development_project.field_project_snapshot
+    - field.field.node.web_development_project.field_featured
+    - field.field.node.web_development_project.field_project_colleagues
+    - field.field.node.web_development_project.field_project_snapshots
     - field.field.node.web_development_project.field_project_tools
     - field.field.node.web_development_project.field_project_website
-    - image.style.large
     - node.type.web_development_project
   module:
     - datetime_range
@@ -24,41 +24,59 @@ bundle: web_development_project
 mode: default
 content:
   body:
-    label: above
+    label: hidden
     type: text_default
-    weight: 2
+    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_dates_of_development:
-    weight: 4
+  field_address:
+    weight: 108
     label: above
     settings:
-      timezone_override: ''
-      format_type: html_date
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dates_of_development:
+    weight: 104
+    label: above
+    settings:
       separator: '-'
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_project_colleague:
-    weight: 6
+  field_featured:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_project_colleagues:
+    weight: 109
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_project_snapshot:
-    weight: 1
-    label: hidden
+  field_project_snapshots:
+    weight: 102
+    label: above
     settings:
-      image_style: large
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   field_project_tools:
-    weight: 5
+    weight: 106
     label: above
     settings:
       link: true
@@ -66,7 +84,7 @@ content:
     type: entity_reference_label
     region: content
   field_project_website:
-    weight: 3
+    weight: 103
     label: above
     settings:
       trim_length: 80
@@ -78,9 +96,8 @@ content:
     type: link
     region: content
   links:
-    weight: 0
-    region: content
+    weight: 100
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_featured_project: true
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: c9616692-749e-4a4b-8bc6-cdb12957b0e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.web_development_project
+id: node.web_development_project.field_address
+field_name: field_address
+entity_type: node
+bundle: web_development_project
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

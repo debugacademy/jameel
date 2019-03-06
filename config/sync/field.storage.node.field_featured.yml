@@ -1,18 +1,17 @@
-uuid: a33a3471-9b41-4a78-bc57-8b72165d98d2
+uuid: 41f55e54-f7c7-4800-9f13-b8daf1fb38e6
 langcode: en
 status: true
 dependencies:
   module:
-    - link
     - node
-id: node.field_website
-field_name: field_website
+id: node.field_featured
+field_name: field_featured
 entity_type: node
-type: link
+type: boolean
 settings: {  }
-module: link
+module: core
 locked: false
-cardinality: 3
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

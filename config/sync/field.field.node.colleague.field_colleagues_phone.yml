@@ -1,14 +1,14 @@
-uuid: 6c954449-8166-4193-a8ef-a1507e5399db
+uuid: 941908d0-67d2-44a8-95a4-3b27ca1f972d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_colleague_phone
+    - field.storage.node.field_colleagues_phone
     - node.type.colleague
   module:
     - telephone
-id: node.colleague.field_colleague_phone
-field_name: field_colleague_phone
+id: node.colleague.field_colleagues_phone
+field_name: field_colleagues_phone
 entity_type: node
 bundle: colleague
 label: 'Colleague Phone'

@@ -1,17 +1,17 @@
-uuid: 79e4c74f-6efa-4340-8d83-fb9efe168a33
+uuid: bb0847db-f60c-48ed-96fb-998112c9d62b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_colleague_snapshot
-    - node.type.colleague
+    - field.storage.node.field_project_snapshots
+    - node.type.web_development_project
   module:
     - image
-id: node.colleague.field_colleague_snapshot
-field_name: field_colleague_snapshot
+id: node.web_development_project.field_project_snapshots
+field_name: field_project_snapshots
 entity_type: node
-bundle: colleague
-label: 'Colleague Snapshot'
+bundle: web_development_project
+label: 'Project Snapshots'
 description: ''
 required: false
 translatable: false

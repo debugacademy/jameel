@@ -1,4 +1,4 @@
-uuid: d7822906-a546-4d64-8e0e-2b7103b25a2f
+uuid: 95cc8de1-5f54-4ff6-b2a1-adcff948320c
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ entity_type: node
 bundle: web_development_project
 label: 'Project Tools'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

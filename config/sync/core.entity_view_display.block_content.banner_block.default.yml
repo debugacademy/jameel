@@ -1,0 +1,21 @@
+uuid: 257f9eef-9790-4e14-90e0-566ffe85627f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.field.block_content.banner_block.field_banner
+id: block_content.banner_block.default
+targetEntityType: block_content
+bundle: banner_block
+mode: default
+content:
+  field_banner:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: b5eaf989-b706-480a-923d-41bb241b5c69
+langcode: en
+status: true
+dependencies: {  }
+id: banner_block
+label: 'Banner Block'
+revision: 0
+description: 'Block to highlight informative information.'

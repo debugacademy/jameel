@@ -1,0 +1,25 @@
+uuid: 24d98a23-839a-48c5-99cb-41e2e7480680
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:80de2a59-4243-4b0c-b5bd-57deff808b0d'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: calltoactionblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:80de2a59-4243-4b0c-b5bd-57deff808b0d'
+settings:
+  id: 'block_content:80de2a59-4243-4b0c-b5bd-57deff808b0d'
+  label: 'Call to Action Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

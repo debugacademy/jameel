@@ -1,0 +1,46 @@
+uuid: cc4c4e98-dc69-4c75-9593-b0e874aa22a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.field.block_content.banner_block.field_banner_message
+    - field.field.block_content.banner_block.field_button_link
+    - field.field.block_content.banner_block.field_icon
+  module:
+    - fontawesome
+    - link
+id: block_content.banner_block.default
+targetEntityType: block_content
+bundle: banner_block
+mode: default
+content:
+  field_banner_message:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_button_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_icon:
+    weight: 2
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+hidden: {  }

@@ -1,0 +1,36 @@
+uuid: 4db29a8d-55a8-40f8-9974-ae1ae8c00c78
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list_block
+    - field.field.block_content.list_block.field_icon
+    - field.field.block_content.list_block.field_tools
+  module:
+    - fontawesome
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: block_content.list_block.default
+targetEntityType: block_content
+bundle: list_block
+mode: default
+content:
+  field_icon:
+    weight: 0
+    label: visually_hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_tools:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

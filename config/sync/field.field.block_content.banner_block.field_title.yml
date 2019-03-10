@@ -1,0 +1,24 @@
+uuid: a0cd902c-921f-464e-bd73-78ca04973135
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.banner_block.field_title
+field_name: field_title
+entity_type: block_content
+bundle: banner_block
+label: Title
+description: 'Banner title.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Call to Action; Hire me!'
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,8 @@
+uuid: d810ab1d-93d4-4a53-b5cf-2670006dc930
+langcode: en
+status: true
+dependencies: {  }
+id: banner_block
+label: 'Banner Block'
+revision: 0
+description: 'Large banner with a title and link.'

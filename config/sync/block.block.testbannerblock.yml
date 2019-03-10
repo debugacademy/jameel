@@ -1,0 +1,25 @@
+uuid: 49215957-f6b0-4275-b43f-9d52c5c4be0b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:09e54aea-53af-498e-b50a-71a9ed1f7eee'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: testbannerblock
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:09e54aea-53af-498e-b50a-71a9ed1f7eee'
+settings:
+  id: 'block_content:09e54aea-53af-498e-b50a-71a9ed1f7eee'
+  label: 'Test Banner Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

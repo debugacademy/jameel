@@ -1,0 +1,25 @@
+uuid: 869b2cd7-227d-4c81-a847-9b2b2653d8e3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:588fa5ce-35e0-4cd0-9b12-c0f9aa411291'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: shortmessage
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:588fa5ce-35e0-4cd0-9b12-c0f9aa411291'
+settings:
+  id: 'block_content:588fa5ce-35e0-4cd0-9b12-c0f9aa411291'
+  label: 'Short Message and Link'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 08ae3346-a2f5-4f2a-902b-cf9fce5f33e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.storage.block_content.field_contact_me
+  module:
+    - link
+id: block_content.banner_block.field_contact_me
+field_name: field_contact_me
+entity_type: block_content
+bundle: banner_block
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,43 @@
+uuid: 3febdf8f-6e26-4710-9ba0-f3639e7fb7c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.field.block_content.banner_block.field_contact_me
+    - field.field.block_content.banner_block.field_message
+    - field.field.block_content.banner_block.layout_builder__layout
+  module:
+    - link
+    - text
+id: block_content.banner_block.default
+targetEntityType: block_content
+bundle: banner_block
+mode: default
+content:
+  field_contact_me:
+    weight: 2
+    settings:
+      placeholder_url: www.google.com
+      placeholder_title: 'Contact Me'
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_message:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Call To Action: Hire Me!'
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

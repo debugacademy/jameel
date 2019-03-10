@@ -1,0 +1,28 @@
+uuid: 8654ed26-b18b-4483-bf2f-11b1bb40c8e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block_type
+    - field.storage.block_content.field_button
+  module:
+    - link
+id: block_content.banner_block_type.field_button
+field_name: field_button
+entity_type: block_content
+bundle: banner_block_type
+label: Button
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://d8academy.com/'
+    title: 'Contact Me &#8594;'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

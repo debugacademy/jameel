@@ -58,3 +58,93 @@ a {
 .slick>div {
     margin: 0 15px;
 }
+
+h1{
+    color: $header-dark;
+    font-family: $font-exo;
+    font-size:48px
+    font-weight:700;
+    line-height: 52px;
+    margin-top: 20px;}
+h2{
+    color: $header-medium;
+    font-family: $font-exo;
+    font-size:40px
+    font-weight:300;
+    line-height: 36px;
+    margin-top: 20px;
+}
+h3{
+    color: $header-dark;
+    font-family: $font-exo;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 700;
+}
+h4{
+    color: $header-medium;
+    font-family: $font-exo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 300;
+}
+h5{
+    color: $header-dark;
+    font-family: $font-exo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 700;
+}
+h6{
+    color: $header-light;
+    font-family: $font-exo;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+p{
+    color: $dark-text;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 300;
+    letter-spacing: 1.25px;
+}
+
+li {
+    margin-bottom: 32px;
+    color: $dark-text;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 300;
+    letter-spacing: 1.25px;
+}
+
+.blockquote {
+    padding-left: 16px;
+    border-left: 2px solid $header-light;
+}
+
+.exo {font-family: $font-exo;}
+
+p a {
+    transition: all 400ms ease-in-out;
+    color: $header-light;
+    text-decoration: underline;
+}
+
+li a.w-inline-block{
+    transition: all 400ms ease-in-out;
+    color: $header-light;
+    text-decoration: underline;
+}

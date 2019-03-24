@@ -21,6 +21,8 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1",
+        "drupal/bootstrap_barrio": "^4.22",
+        "drupal/bootstrap_sass": "^1.9",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drush/drush": "^9.0.0",

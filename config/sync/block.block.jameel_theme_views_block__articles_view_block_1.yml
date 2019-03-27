@@ -1,0 +1,30 @@
+uuid: 6f513048-5e38-457a-bb9a-7068be98aa45
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles_view
+  module:
+    - system
+    - views
+  theme:
+    - jameel_theme
+id: jameel_theme_views_block__articles_view_block_1
+theme: jameel_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:articles_view-block_1'
+settings:
+  id: 'views_block:articles_view-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /articles-view
+    negate: true
+    context_mapping: {  }

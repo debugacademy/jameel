@@ -1,0 +1,31 @@
+uuid: 2886221f-9fbe-4e29-8441-0adf7b4456c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9d640cfe-e471-412a-a31a-77273a01086e'
+  module:
+    - block_content
+    - system
+  theme:
+    - jameel_theme
+id: jameel_theme_findmeonsocial
+theme: jameel_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:9d640cfe-e471-412a-a31a-77273a01086e'
+settings:
+  id: 'block_content:9d640cfe-e471-412a-a31a-77273a01086e'
+  label: 'Find Me On Social'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/feedback
+    negate: false
+    context_mapping: {  }

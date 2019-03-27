@@ -1,4 +1,4 @@
-uuid: 09fab12d-dfcf-430e-96fc-93f93356436b
+uuid: 1b838c0a-276a-4a94-af8d-642f7cbddc02
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
 name: Colleague
 type: colleague
 description: 'Colleagues -- former and current'

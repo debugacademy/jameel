@@ -1,38 +1,38 @@
-uuid: 79e4c74f-6efa-4340-8d83-fb9efe168a33
+uuid: 4dc93543-2223-442e-a6bb-376fd234b499
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_colleague_snapshot
+    - field.storage.node.field_colleague
     - node.type.colleague
   module:
     - image
-id: node.colleague.field_colleague_snapshot
-field_name: field_colleague_snapshot
+id: node.colleague.field_colleague
+field_name: field_colleague
 entity_type: node
 bundle: colleague
-label: 'Colleague Snapshot'
+label: Colleague
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
   alt_field: true
   alt_field_required: true
   title_field: false
   title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null
     height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

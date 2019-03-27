@@ -1,16 +1,16 @@
-uuid: bf1d2b04-37ac-4e84-a27f-59e964e0e9c4
+uuid: 7af81e11-cda1-47fa-bb66-b1ded42a20e0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_colleague_website
-    - node.type.colleague
+    - node.type.web_development_project
   module:
     - link
-id: node.colleague.field_colleague_website
+id: node.web_development_project.field_colleague_website
 field_name: field_colleague_website
 entity_type: node
-bundle: colleague
+bundle: web_development_project
 label: 'Colleague Website'
 description: ''
 required: false

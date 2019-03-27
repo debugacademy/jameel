@@ -1,4 +1,4 @@
-uuid: f01a93a3-a647-432c-b1d2-f3f2702cb471
+uuid: 452b01c6-7920-45c1-a881-e3df17e74507
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
 name: 'Web Development Project'
 type: web_development_project
 description: 'To show off and display all the web dev projects that I have created or participated in.'

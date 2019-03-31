@@ -1,4 +1,4 @@
-name: 'dynamic_coyright_block'
+name: 'Dynamic Coyright Block'
 type: module
 description: 'Creates a copyright block that displays the current year'
 core: 8.x

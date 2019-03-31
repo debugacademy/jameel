@@ -1,0 +1,7 @@
+name: '[A[BDynamic Copyright Block'
+type: module
+description: 'Provides copyright block'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - block

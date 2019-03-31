@@ -1,0 +1,14 @@
+{
+  "name": "drupal/dynamic_coyright_block",
+  "type": "drupal-module",
+  "description": "Creates a copyright block that displays the current year",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/dynamic_coyright_block",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/dynamic_coyright_block",
+    "source": "http://cgit.drupalcode.org/dynamic_coyright_block"
+  },
+  "require": { }
+}

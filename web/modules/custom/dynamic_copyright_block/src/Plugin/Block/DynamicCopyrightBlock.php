@@ -18,8 +18,9 @@ class DynamicCopyrightBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $year = date("Y");
     $build = [];
-    $build['dynamic_copyright_block']['#markup'] = 'Implement DynamicCopyrightBlock.';
+    $build['dynamic_copyright_block']['#markup'] = "© $year. All rights reserved.";
 
     return $build;
   }

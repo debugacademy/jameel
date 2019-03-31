@@ -2,17 +2,12 @@
 
 
 /* Google Fonts */
-
-//@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
-//@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Exo:300,300i,400,400i,700,700i,900,900i');
 // font families
 $font-lato: 'Lato',
-Arial,
-Verdana,
 sans-serif;
-$font-raleway: 'Raleway',
-Arial,
-Verdana,
+$font-exo: 'Exo',
 sans-serif;
 // Fonts
 //

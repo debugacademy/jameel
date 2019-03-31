@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains dynamic_coyright_block.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dynamic_coyright_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dynamic_coyright_block module.
+    case 'help.page.dynamic_coyright_block':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Creates a copyright block that displays the current year') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dynamic_coyright_block_theme() {
+  return [
+    'dynamic_coyright_block' => [
+      'render element' => 'children',
+    ],
+  ];
+}

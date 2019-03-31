@@ -15,34 +15,65 @@ body {
 }
 
 h1 {
+    font-family: $font-exo;
     font-size: $font-size-h1;
+    font-weight: 700;
     color: $midnight-blue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 52px;
 }
 
 h2 {
+    font-family: $font-exo;
     font-size: $font-size-h2;
+    font-weight: 300;
     color: $teal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 36px;
 }
 
 h3 {
+    font-family: $font-exo;
     font-size: $font-size-h3;
+    font-weight: 700;
     color: $midnight-blue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
 }
 
 h4 {
+    font-family: $font-exo;
     font-size: $font-size-h4;
+    font-weight: 300;
     color: $teal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
 }
 
 h5 {
+    font-family: $font-exo;
     font-size: $font-size-h5;
+    font-weight: 700;
     color: $midnight-blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
 }
 
 h6 {
+    font-family: $font-exo;
     font-size: $font-size-h6;
+    font-weight: 300;
     color: $coral;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 18px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* COLORS 

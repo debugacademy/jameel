@@ -11,9 +11,91 @@ Description: Bootstrap 4 with Sass
 
 body {
     background: $white;
+    font-family: $font-lato;
 		
 }
 
+h1 {
+    font-family: $font-exo;
+    font-size: $font-size-h1;
+    font-weight: 700;
+    color: $midnight-blue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 52px;
+}
+
+h2 {
+    font-family: $font-exo;
+    font-size: $font-size-h2;
+    font-weight: 300;
+    color: $teal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 36px;
+}
+
+h3 {
+    font-family: $font-exo;
+    font-size: $font-size-h3;
+    font-weight: 700;
+    color: $midnight-blue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+h4 {
+    font-family: $font-exo;
+    font-size: $font-size-h4;
+    font-weight: 300;
+    color: $teal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+h5 {
+    font-family: $font-exo;
+    font-size: $font-size-h5;
+    font-weight: 700;
+    color: $midnight-blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+h6 {
+    font-family: $font-exo;
+    font-size: $font-size-h6;
+    font-weight: 300;
+    color: $coral;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #2b2b2b;
+    margin-bottom: 32px;
+    line-height: 29px;
+    letter-spacing: 1.25px;
+}
+
+ul {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
 
 /* COLORS 
 --------------------------------------------------*/

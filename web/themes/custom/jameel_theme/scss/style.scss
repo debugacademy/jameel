@@ -11,6 +11,7 @@ Description: Bootstrap 4 with Sass
 
 body {
     background: $white;
+    font-family: $font-lato;
 		
 }
 
@@ -74,6 +75,26 @@ h6 {
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #2b2b2b;
+    margin-bottom: 32px;
+    line-height: 29px;
+    letter-spacing: 1.25px;
+}
+
+ul {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 16px;
+    font-size: 18px;
 }
 
 /* COLORS 

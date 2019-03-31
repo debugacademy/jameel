@@ -1,0 +1,20 @@
+uuid: 809306ac-6e92-4183-9b42-fd33e69c617f
+langcode: en
+status: true
+dependencies:
+  module:
+    - dynamic_copyright_block
+  theme:
+    - jameel_theme
+id: dynamiccopyrightblock
+theme: jameel_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: dynamic_copyright_block
+settings:
+  id: dynamic_copyright_block
+  label: 'Dynamic copyright block'
+  provider: dynamic_copyright_block
+  label_display: '0'
+visibility: {  }

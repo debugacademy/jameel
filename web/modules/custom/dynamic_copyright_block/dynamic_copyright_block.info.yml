@@ -1,0 +1,7 @@
+name: 'Dynamic Copyright Block'
+type: module
+description: 'Provides a copyright block which displays the current year.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - block

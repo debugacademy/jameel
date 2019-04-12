@@ -29,7 +29,7 @@
  * @ingroup themeable
  */
 #}
-<link href="https://fonts.googleapis.com/css?family=Exo:400,900" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet"> 
 {%
   set classes = [
     'block',
@@ -41,12 +41,18 @@
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
+
     <h2{{ title_attributes }}>{{ label }}</h2>
+    
   {% endif %}
+
   {{ title_suffix }}
+
   {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
-            {{ content }}
-    </div>
+    {% if content['#title']['#markup'] is not empty %}
+      <div{{ content_attributes.addClass('content') }}>
+        <span id="blog-article"><h1>{{content['#title']['#markup']}}</h1></span>
+      </div>
+    {% endif %}  
   {% endblock %}
 </div>

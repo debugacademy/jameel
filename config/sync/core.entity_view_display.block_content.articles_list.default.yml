@@ -1,0 +1,48 @@
+uuid: 594c0374-efb9-44f3-aed1-b65d220cfe35
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.articles_list
+    - field.field.block_content.articles_list.field_authored_on
+    - field.field.block_content.articles_list.field_image
+    - field.field.block_content.articles_list.field_title
+  module:
+    - datetime
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    sections: {  }
+id: block_content.articles_list.default
+targetEntityType: block_content
+bundle: articles_list
+mode: default
+content:
+  field_authored_on:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_month
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

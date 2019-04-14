@@ -9,7 +9,6 @@ use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\TypedData\Plugin\DataType\ItemList;
 
-
 /**
  * Implements hook_help().
  */
@@ -58,12 +57,9 @@ function _tfc_is_entity_applicable($entity) {
 // Look at fontawesome.module's presave hook
 function _tfc_get_entity_text_fields($entity) {
 // Return all the text fields from the entity
-	print "<br>got it<br>";
-	  if ($entity instanceof ContentEntityInterface) {
+	if ($entity instanceof ContentEntityInterface) {
 
-  	print "<br>got here<br>";
-// Loop over the fields.			
-  	
+	// Loop over the fields.			
 	$fieldValues=[];
 	foreach ($entity->getFields() as $fields) {
 		if ($fields instanceof ItemList) {
@@ -82,8 +78,7 @@ function _tfc_get_entity_text_fields($entity) {
 	}
   }
   return $fieldValues;
-}
-        
+}       
 
 
 // medium difficulty (search-able)
@@ -100,6 +95,25 @@ function _tfc_is_term_in_text($term, $text) {
 // high difficulty
 function _tfc_get_entity_taxonomy_fields($entity) {
     // Return all of the taxonomy fields
+    if ($entity instanceof ContentEntityInterface) {
+
+	// Loop over the fields.			
+		$fieldValues=[];
+    	foreach ($entity->getFields() as $fields) {
+		if ($fields instanceof ItemList) {
+			// If this is a text field (uses an editor).
+			if (in_array($fields->getFieldDefinition()->getType(), [
+			'reference',
+			])) {
+				foreach ($fields as $field) {
+				// Find and replace SVG strings with original icon HTML.
+				$fieldValues[] = $field->getValue();
+				}
+			}
+		}
+	}
+
+    }
 }
 
 function _tfc_find_terms_for_entity($entity) {

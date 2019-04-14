@@ -1,0 +1,21 @@
+uuid: ed864984-12aa-4075-bedd-3afab1b9d647
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.articles_list
+    - field.storage.block_content.field_authored_on
+  module:
+    - datetime
+id: block_content.articles_list.field_authored_on
+field_name: field_authored_on
+entity_type: block_content
+bundle: articles_list
+label: 'Authored On'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

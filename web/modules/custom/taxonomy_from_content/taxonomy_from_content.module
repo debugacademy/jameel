@@ -6,6 +6,9 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\TypedData\Plugin\DataType\ItemList;
+
 
 /**
  * Implements hook_help().
@@ -21,7 +24,89 @@ function taxonomy_from_content_help($route_name, RouteMatchInterface $route_matc
 
     default:
   }
+}  
+function taxonomy_from_content_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+    if (_tfc_is_entity_applicable($entity)) {
+        _tfc_populate_terms($entity);
+    }
+}
 
-function taxonomy_from_content_entity_presave(Drupal\Core\Entity\EntityInterface $entity){
-	
+function _tfc_test($type = 0) {
+    if ($type == 0) {
+        return \Drupal\node\Entity\Node::load(13);
+    }
+    else if($type == 1) {
+        return \Drupal\taxonomy\Entity\Term::loadMultiple([3]);
+    }
+}
+
+// low 
+function _tfc_get_applicable_entity_types() {
+    // Return an array of the entity types
+    return [
+        'node',
+        'media'
+    ];
+}
+
+// low-medium: check if $entity's type is in this array: _tfc_get_applicable_entity_types()
+function _tfc_is_entity_applicable($entity) {
+    // Check if $entity is one of _tfc_get_applicable_entity_types
+    return 'yes';
+}
+
+// Look at fontawesome.module's presave hook
+function _tfc_get_entity_text_fields($entity) {
+// Return all the text fields from the entity
+	print "<br>got it<br>";
+	  if ($entity instanceof ContentEntityInterface) {
+
+  	print "<br>got here<br>";
+// Loop over the fields.			
+  	
+	$fieldValues=[];
+	foreach ($entity->getFields() as $fields) {
+		if ($fields instanceof ItemList) {
+			// If this is a text field (uses an editor).
+			if (in_array($fields->getFieldDefinition()->getType(), [
+			'text',
+			'text_long',
+			'text_with_summary',
+			])) {
+				foreach ($fields as $field) {
+				// Find and replace SVG strings with original icon HTML.
+				$fieldValues[] = $field->getValue();
+				}
+			}
+		}
+	}
+  }
+  return $fieldValues;
+}
+        
+
+
+// medium difficulty (search-able)
+function _tfc_get_searchable_taxonomy_terms() {
+    // return all terms from Drupal
+}
+
+// low difficulty. is $text found in $term.
+function _tfc_is_term_in_text($term, $text) {
+    // returns true if $term is found in $text, false otherwise
+
+}
+
+// high difficulty
+function _tfc_get_entity_taxonomy_fields($entity) {
+    // Return all of the taxonomy fields
+}
+
+function _tfc_find_terms_for_entity($entity) {
+    // Will use _tfc_is_term_in_text and _tfc_is_term_in_text
+}
+
+// most difficult
+function _tfc_populate_terms($entity) {
+
 }

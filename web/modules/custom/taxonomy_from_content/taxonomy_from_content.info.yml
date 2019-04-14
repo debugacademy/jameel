@@ -4,4 +4,4 @@ description: 'Tags content with taxonomy terms that exist in a taxonomy library'
 core: 8.x
 package: 'Custom'
 dependencies:
-  - taxxonomy
+  - taxonomy

@@ -22,3 +22,7 @@ function taxonomy_from_content_help($route_name, RouteMatchInterface $route_matc
     default:
   }
 }
+
+function taxonomy_from_content_entity_presave(Drupal\Core\Entity\EntityInterface $entity){
+
+}

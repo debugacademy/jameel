@@ -1,0 +1,7 @@
+name: 'Taxonomy from content'
+type: module
+description: 'Auto-tags content with taxonomy terms.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - taxonomy

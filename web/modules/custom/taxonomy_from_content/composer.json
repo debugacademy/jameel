@@ -1,7 +1,7 @@
 {
   "name": "drupal/taxonomy_from_content",
   "type": "drupal-module",
-  "description": "Auto tax content with taxonomy terms",
+  "description": "Tags content with taxonomy terms that exist in a taxonomy library",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "https://www.drupal.org/project/taxonomy_from_content",

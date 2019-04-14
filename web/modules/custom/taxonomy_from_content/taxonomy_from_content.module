@@ -13,10 +13,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function taxonomy_from_content_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     // Main module help for the taxonomy_from_content module.
-    case 'help.page.taxonomy_from_content':
+    case 'help.page.c':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Auto tax content with taxonomy terms') . '</p>';
+      $output .= '<p>' . t('Tags content with taxonomy terms that exist in a taxonomy library') . '</p>';
       return $output;
 
     default:

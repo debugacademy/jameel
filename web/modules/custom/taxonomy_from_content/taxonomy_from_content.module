@@ -59,11 +59,8 @@ function _tfc_is_entity_applicable($entity) {
 // Look at fontawesome.module's presave hook
 function _tfc_get_entity_text_fields($entity) {
 // Return all the text fields from the entity
-
-      if ($entity instanceof ContentEntityInterface) {
-
-// Loop over the fields.            
-     
+    if ($entity instanceof ContentEntityInterface) {
+      // Loop over the fields.              
     $fieldValues=[];
     foreach ($entity->getFields() as $fields) {
         if ($fields instanceof ItemList) {
@@ -89,9 +86,7 @@ function _tfc_get_searchable_taxonomy_terms($vname) {
     // return all terms from Drupal
   $terms =\Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($vname);
   foreach ($terms as $term) {
-    $term_data[] = array(
-      "name" => $term->name
-    );
+    $term_data[] = $term->name;
   }
   return $term_data;
     

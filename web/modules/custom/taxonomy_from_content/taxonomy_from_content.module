@@ -52,9 +52,29 @@ function _tfc_get_applicable_entity_types() {
 
 // low-medium: check if $entity's type is in this array: _tfc_get_applicable_entity_types()
 function _tfc_is_entity_applicable($entity) {
-    // Check if $entity is one of _tfc_get_applicable_entity_types
-    return 'yes';
+// Return all the text fields from the entity
+    if ($entity instanceof ContentEntityInterface) {
+      // Loop over the fields.              
+    $found='NO';
+    foreach ($entity->getFields() as $fields) {
+        if ($fields instanceof ItemList) {
+            // If this is a text field (uses an editor).
+            if (in_array($fields->getFieldDefinition()->getType(), [
+            _tfc_get_applicable_entity_types()
+            ])) {
+                foreach ($fields as $field) {
+                // Find and replace SVG strings with original icon HTML.
+                $found = 'YES';
+                }
+            }
+        }
+    }
+ }
+ return $found;
 }
+
+   
+
 
 // Look at fontawesome.module's presave hook
 function _tfc_get_entity_text_fields($entity) {

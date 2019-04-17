@@ -129,6 +129,17 @@ function _tfc_is_term_in_text($term, $text) {
 // high difficulty
 function _tfc_get_entity_taxonomy_fields($entity) {
     // Return all of the taxonomy fields
+    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($entity);
+    foreach ($terms as $term) {
+        
+        $term_data[] = [
+            'tid' => $term->tid,
+            'tname' => $term->name
+           
+        ];
+    } 
+return $term_data;
+
 }
 
 function _tfc_find_terms_for_entity($entity) {

@@ -7,8 +7,7 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
-use Drupal\Core\TypedData\Plugin\DataType\ItemList;
-
+use Drupal\taxonomy\Entity\Term;
 /**
  * Implements hook_help().
  */
@@ -95,25 +94,14 @@ function _tfc_is_term_in_text($term, $text) {
 // high difficulty
 function _tfc_get_entity_taxonomy_fields($entity) {
     // Return all of the taxonomy fields
-    if ($entity instanceof ContentEntityInterface) {
-
-	// Loop over the fields.			
-		$fieldValues=[];
-    	foreach ($entity->getFields() as $fields) {
-		if ($fields instanceof ItemList) {
-			// If this is a text field (uses an editor).
-			if (in_array($fields->getFieldDefinition()->getType(), [
-			'reference',
-			])) {
-				foreach ($fields as $field) {
-				// Find and replace SVG strings with original icon HTML.
-				$fieldValues[] = $field->getValue();
-				}
-			}
-		}
+	$terms =\Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($entity);
+	foreach ($terms as $term) {
+ 		$termValue[] = array(
+  		'id' => $term->tid,
+  		'name' => $term->name
+ 		);
 	}
-
-    }
+	return $termValue;
 }
 
 function _tfc_find_terms_for_entity($entity) {

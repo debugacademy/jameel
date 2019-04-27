@@ -1,6 +1,6 @@
 buttons_size: 32
 additional_html: "<a class=\"a2a_button_twitter\"></a>\r\n<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_pinterest\"></a>\r\n<a class=\"a2a_button_linkedin\"></a>"
-additional_css: ''
+additional_css: '.a2a_svg { border-radius: 0 !important; }'
 additional_js: ''
 universal_button: none
 custom_universal_button: ''

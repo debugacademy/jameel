@@ -88,7 +88,9 @@ function _tfc_get_searchable_taxonomy_terms() {
 // low difficulty. is $text found in $term.
 function _tfc_is_term_in_text($term, $text) {
     // returns true if $term is found in $text, false otherwise
-
+  $result[] = array(intersect($term,$text));
+  print_r($result);
+  // above returns list of words that are found
 }
 
 // high difficulty

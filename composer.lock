@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "059b84d457128b78cdfffd18a568a1a5",
+    "content-hash": "92cd3e1663ff89088e1545ba0a9b7771",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1853,11 +1853,62 @@
             "time": "2018-07-27T10:07:07+00:00"
         },
         {
+            "name": "drupal/addtoany",
+            "version": "1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/addtoany.git",
+                "reference": "8.x-1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "f66b3cb0a95b500e4802e8ff9c29af04554327d8"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.12",
+                    "datestamp": "1554702781",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "AddToAny",
+                    "homepage": "https://www.drupal.org/user/2640913"
+                },
+                {
+                    "name": "micropat",
+                    "homepage": "https://www.drupal.org/user/260224"
+                }
+            ],
+            "description": "Share buttons by AddToAny, including the AddToAny universal sharing button, Facebook, Twitter, Google+, Pinterest, and over 100 more on the <a href=\"https://www.addtoany.com/\" target=\"_blank\">AddToAny</a> platform.",
+            "homepage": "https://www.drupal.org/project/addtoany",
+            "support": {
+                "source": "https://git.drupalcode.org/project/addtoany"
+            }
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "1.26.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/admin_toolbar",
+                "url": "https://git.drupalcode.org/project/admin_toolbar.git",
                 "reference": "8.x-1.26"
             },
             "dist": {
@@ -1938,7 +1989,7 @@
             "version": "4.22.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/bootstrap_barrio",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
                 "reference": "8.x-4.22"
             },
             "dist": {
@@ -1962,6 +2013,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Layout Builder Sections Issue": "https://www.drupal.org/files/issues/2018-06-01/2976934-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1990,7 +2044,7 @@
             "version": "1.9.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/bootstrap_sass",
+                "url": "https://git.drupalcode.org/project/bootstrap_sass.git",
                 "reference": "8.x-1.9"
             },
             "dist": {
@@ -2537,7 +2591,7 @@
             "version": "2.12.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/fontawesome",
+                "url": "https://git.drupalcode.org/project/fontawesome.git",
                 "reference": "8.x-2.12"
             },
             "dist": {

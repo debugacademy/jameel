@@ -1,12 +1,12 @@
-uuid: af3378f9-0095-4c76-8b97-ce75b6bc5c83
+uuid: 6e93aec9-3642-4349-a558-8f3feddbb372
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.web_development_project.body
     - field.field.node.web_development_project.field_dates_of_development
-    - field.field.node.web_development_project.field_featured_project
-    - field.field.node.web_development_project.field_project_colleague
+    - field.field.node.web_development_project.field_featured
+    - field.field.node.web_development_project.field_project_colleagues
     - field.field.node.web_development_project.field_project_snapshot
     - field.field.node.web_development_project.field_project_tools
     - field.field.node.web_development_project.field_project_website
@@ -44,14 +44,14 @@ content:
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_featured_project:
+  field_featured:
     weight: 125
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_project_colleague:
+  field_project_colleagues:
     weight: 127
     settings:
       match_operator: CONTAINS

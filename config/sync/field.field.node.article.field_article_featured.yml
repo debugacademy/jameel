@@ -1,15 +1,15 @@
-uuid: 991c48f1-e289-47b0-89ea-389b1347ee4c
+uuid: 73ab1ace-a464-4fa7-a466-e19ae2ce945e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_featured_article
+    - field.storage.node.field_article_featured
     - node.type.article
-id: node.article.field_featured_article
-field_name: field_featured_article
+id: node.article.field_article_featured
+field_name: field_article_featured
 entity_type: node
 bundle: article
-label: 'Featured Article'
+label: Featured
 description: ''
 required: false
 translatable: false

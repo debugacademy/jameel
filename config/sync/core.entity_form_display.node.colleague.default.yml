@@ -1,4 +1,4 @@
-uuid: 3679dd1d-4e26-43f3-a70b-edda737538bb
+uuid: 2f91512b-419e-49be-b309-e4ffa7d19676
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,14 @@ dependencies:
     - field.field.node.colleague.body
     - field.field.node.colleague.field_colleague_email
     - field.field.node.colleague.field_colleague_phone
-    - field.field.node.colleague.field_colleague_snapshot
-    - field.field.node.colleague.field_colleague_website
+    - field.field.node.colleague.field_contact_since
+    - field.field.node.colleague.field_headshot
+    - field.field.node.colleague.field_project_tools
+    - field.field.node.colleague.field_website
     - image.style.thumbnail
     - node.type.colleague
   module:
+    - datetime
     - image
     - link
     - path
@@ -51,7 +54,13 @@ content:
     third_party_settings: {  }
     type: telephone_default
     region: content
-  field_colleague_snapshot:
+  field_contact_since:
+    weight: 127
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_headshot:
     weight: 122
     settings:
       progress_indicator: throbber
@@ -59,7 +68,16 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_colleague_website:
+  field_project_tools:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_website:
     weight: 123
     settings:
       placeholder_url: ''

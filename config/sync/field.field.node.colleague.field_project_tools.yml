@@ -1,0 +1,29 @@
+uuid: cbaa2313-a658-41da-a176-f7e2e59f0530
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_tools
+    - node.type.colleague
+    - taxonomy.vocabulary.tools
+id: node.colleague.field_project_tools
+field_name: field_project_tools
+entity_type: node
+bundle: colleague
+label: Capabilities
+description: 'Pulls from ''Project Tools'' to list what applications, platforms, software and tools the colleague has experience with.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tools: tools
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,14 +1,15 @@
-uuid: 7e2c5233-a1d5-44c3-b3b4-ec76f4c955cd
+uuid: c338f7ff-e4bd-4c20-b0e7-591b7e383ffe
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_featured_project
-field_name: field_featured_project
+id: node.field_project_colleagues
+field_name: field_project_colleagues
 entity_type: node
-type: boolean
-settings: {  }
+type: entity_reference
+settings:
+  target_type: node
 module: core
 locked: false
 cardinality: 1

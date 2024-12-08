@@ -1,0 +1,19 @@
+uuid: 0e836b7a-de84-41a5-8955-c0b268b156b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colleague_company
+    - node.type.colleague
+id: node.colleague.field_colleague_company
+field_name: field_colleague_company
+entity_type: node
+bundle: colleague
+label: 'Colleague Company'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
